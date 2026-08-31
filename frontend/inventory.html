@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Inventory - Home Inventory Management</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inria+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-inventory">
+    <div class="topbar">
+      <button class="add-item-btn-small" id="addItemBtnTop">+ Add Item</button>
+      <a
+        href="admin-dashboard.html"
+        class="logout-btn"
+        id="adminDashboardLink"
+        style="display: none"
+        >Admin Dashboard</a
+      >
+      <a href="#" class="logout-btn" id="logoutBtn">Logout</a>
+    </div>
+
+    <h1 class="page-title">My Inventory</h1>
+
+    <div class="search-wrap">
+      <label for="searchInput">Search</label>
+      <input type="text" id="searchInput" placeholder="Search Items...." />
+    </div>
+
+    <div class="filters">
+      <div class="filter-group">
+        <label for="categoryFilter">Category</label>
+        <select id="categoryFilter"></select>
+      </div>
+      <div class="filter-group">
+        <label for="locationFilter">Location</label>
+        <select id="locationFilter"></select>
+      </div>
+    </div>
+
+    <div class="item-grid" id="itemGrid"></div>
+
+    <p class="empty-state" id="emptyState">No Inventory Item Found!</p>
+
+    <div class="add-item-wrap">
+      <button class="add-item-btn" id="addItemBtn">+ Add new item</button>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="api-config.js"></script>
+    <script src="inventory-script.js"></script>
+  </body>
+</html>

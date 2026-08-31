@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Home Inventory Management</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inria+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-admin">
+    <div class="topbar">
+      <a href="inventory.html" class="logout-btn">My Inventory</a>
+      <a href="#" class="logout-btn" id="logoutBtn">Logout</a>
+    </div>
+
+    <h1 class="page-title">Admin Dashboard</h1>
+
+    <div class="stats-row">
+      <div class="stat-card">
+        <h2>Registered Users <span class="icon">👤</span></h2>
+        <div class="stat-value" id="registeredUsersCount">0</div>
+      </div>
+      <div class="stat-card">
+        <h2>Total Inventory Items <span class="icon">📺</span></h2>
+        <div class="stat-value" id="totalItemsCount">0</div>
+      </div>
+    </div>
+
+    <div class="search-wrap">
+      <label for="searchInput">Search</label>
+      <div class="search-input-box">
+        <input type="text" id="searchInput" placeholder="Search User...." />
+        <span class="search-icon">🔍</span>
+      </div>
+    </div>
+
+    <div class="role-filter-wrap">
+      <label for="roleFilter">Role</label>
+      <select id="roleFilter">
+        <option value="All">All</option>
+        <option value="User">Users only</option>
+        <option value="Admin">Admins only</option>
+      </select>
+    </div>
+
+    <div class="user-list-card">
+      <h2>User List</h2>
+      <table class="user-table">
+        <thead>
+          <tr>
+            <th>Sl No</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th class="role-col">Role</th>
+            <th class="items-col">Items</th>
+            <th class="action-col">Action</th>
+          </tr>
+        </thead>
+        <tbody id="userTableBody"></tbody>
+      </table>
+      <p class="no-results" id="noResults">No users found.</p>
+    </div>
+
+    <script src="api-config.js"></script>
+    <script src="admin-script.js"></script>
+  </body>
+</html>

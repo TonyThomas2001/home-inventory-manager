@@ -1,0 +1,14 @@
+{
+  "name": "home-inventory-manager",
+  "version": "1.0.0",
+  "description": "Home Inventory Management App (Express + MongoDB backend, plain HTML/CSS/JS frontend)",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "start": "cd backend && npm start",
+    "dev": "cd backend && npm run dev",
+    "seed": "cd backend && npm run seed",
+    "frontend": "cd frontend && npx serve ."
+  },
+  "author": "",
+  "license": "ISC"
+}

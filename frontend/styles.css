@@ -1,0 +1,968 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.page-register {
+  background-color: #96c0ff;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 44px 20px;
+}
+
+body.page-register h1.page-title {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #000;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+body.page-register form.register-card {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 580px;
+  padding: 33px 40px 45px;
+}
+
+body.page-register .field {
+  margin-bottom: 18px;
+}
+
+body.page-register .field label {
+  display: block;
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+body.page-register .field input {
+  width: 100%;
+  height: 39px;
+  padding: 0 14px;
+  background-color: rgba(37, 99, 235, 0.09);
+  border: 1px solid #000;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  outline: none;
+}
+
+body.page-register .field input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25);
+}
+
+body.page-register .register-btn {
+  display: block;
+  width: 252px;
+  max-width: 100%;
+  margin: 26px auto 0;
+  height: 39px;
+  background-color: #2563eb;
+  border: 1px solid #000;
+  border-radius: 90px;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+body.page-register .register-btn:hover {
+  background-color: #1d4ed8;
+}
+
+body.page-register .login-line {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 15px;
+  color: #000;
+}
+
+body.page-register .login-line a {
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+body.page-register .login-line a:hover {
+  text-decoration: underline;
+}
+
+body.page-register .error {
+  color: #b91c1c;
+  font-size: 13px;
+  margin-top: 4px;
+  display: none;
+}
+
+body.page-login {
+  background-color: #96c0ff;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+body.page-login h1.brand-title {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+  margin: 15px 0 30px;
+}
+
+body.page-login .hero {
+  width: 186px;
+  height: 119px;
+  border: 1px solid #000;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+body.page-login .hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+body.page-login h2.welcome-title {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+body.page-login .login-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 596px;
+  padding: 40px 92px 45px;
+}
+
+body.page-login .field {
+  margin-bottom: 24px;
+}
+
+body.page-login .field label {
+  display: block;
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+body.page-login .field input {
+  width: 100%;
+  height: 54px;
+  padding: 0 14px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  outline: none;
+}
+
+body.page-login .field input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25);
+}
+
+body.page-login .row-between {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+body.page-login .row-between a {
+  font-size: 15px;
+  font-weight: 300;
+  color: #000;
+  text-decoration: none;
+}
+
+body.page-login .row-between a:hover {
+  text-decoration: underline;
+}
+
+body.page-login .login-btn {
+  display: block;
+  width: 138px;
+  height: 46px;
+  margin: 0 auto;
+  background-color: #2563eb;
+  border: 1px solid #000;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+body.page-login .login-btn:hover {
+  background-color: #1d4ed8;
+}
+
+body.page-login .divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 30px 0;
+}
+
+body.page-login .divider hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #000;
+}
+
+body.page-login .divider span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+
+body.page-login .social-row {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 30px;
+}
+
+body.page-login .social-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.page-login .social-btn svg {
+  width: 100%;
+  height: 100%;
+}
+
+body.page-login .register-line {
+  text-align: center;
+  font-size: 15px;
+  color: #000;
+  margin-top: -10px;
+}
+
+body.page-login .register-line a {
+  display: block;
+  margin-top: 8px;
+  color: #000;
+  text-decoration: none;
+}
+
+body.page-login .register-line a:hover {
+  text-decoration: underline;
+}
+
+body.page-login .error-banner {
+  background-color: #fee2e2;
+  border: 1px solid #b91c1c;
+  color: #b91c1c;
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  display: none;
+}
+
+body.page-inventory {
+  background-color: #96c0ff;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  padding: 20px 40px 60px;
+}
+
+body.page-inventory .topbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+body.page-inventory .add-item-btn-small {
+  background-color: #70b2ff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 5px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #000;
+}
+
+body.page-inventory .add-item-btn-small:hover {
+  background-color: #559ce6;
+}
+
+body.page-inventory .logout-btn {
+  background-color: #f27171;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 5px 20px;
+  font-size: 15px;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body.page-inventory .logout-btn:hover {
+  background-color: #e05a5a;
+}
+
+body.page-inventory h1.page-title {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+body.page-inventory .search-wrap {
+  max-width: 428px;
+  margin: 0 auto 24px;
+}
+
+body.page-inventory .search-wrap label {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+body.page-inventory .search-wrap input {
+  width: 100%;
+  height: 28px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: #fff;
+  padding: 0 14px;
+  font-size: 15px;
+  outline: none;
+}
+
+body.page-inventory .filters {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+body.page-inventory .filter-group {
+  flex: 1;
+  min-width: 220px;
+}
+
+body.page-inventory .filter-group label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+body.page-inventory .filter-group select {
+  width: 100%;
+  height: 32px;
+  border: 1px solid #000;
+  background: #fff;
+  padding: 0 10px;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+body.page-inventory .item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+body.page-inventory .item-card {
+  background: #fff;
+  border: 1px solid #000;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+body.page-inventory .item-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  overflow-wrap: anywhere;
+}
+
+body.page-inventory .item-card p {
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+body.page-inventory .item-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+body.page-inventory .item-actions button {
+  flex: 1;
+  border: 1px solid #000;
+  padding: 4px 0;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+body.page-inventory .edit-btn {
+  background-color: #7dda97;
+}
+
+body.page-inventory .edit-btn:hover {
+  background-color: #63c67f;
+}
+
+body.page-inventory .delete-btn {
+  background-color: #c64040;
+  color: #fff;
+}
+
+body.page-inventory .delete-btn:hover {
+  background-color: #a83333;
+}
+
+body.page-inventory .add-item-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+body.page-inventory .add-item-btn {
+  background-color: #70b2ff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 8px 24px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000;
+}
+
+body.page-inventory .add-item-btn:hover {
+  background-color: #559ce6;
+}
+
+body.page-inventory .empty-state {
+  text-align: center;
+  font-size: 21px;
+  margin: 60px 0;
+  display: none;
+}
+
+body.page-inventory .toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #dcfce7;
+  border: 1px solid #16a34a;
+  color: #166534;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  display: none;
+}
+
+body.mypage-item-form {
+  background-color: #96c0ff;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  padding: 20px 20px 60px;
+}
+
+body.mypage-item-form .topbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+body.mypage-item-form .topbar a {
+  background-color: #f27171;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 5px 20px;
+  font-size: 15px;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body.mypage-item-form .topbar a:hover {
+  background-color: #e05a5a;
+}
+
+body.mypage-item-form h1.page-title {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+body.mypage-item-form form.item-form {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+body.mypage-item-form .field {
+  margin-bottom: 26px;
+}
+
+body.mypage-item-form .field label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+body.mypage-item-form .field input[type="text"],
+body.mypage-item-form .field input[type="number"],
+body.mypage-item-form .field select,
+body.mypage-item-form .field textarea {
+  width: 100%;
+  border: 1px solid #000;
+  background: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  padding: 0 14px;
+}
+
+body.mypage-item-form .field input[type="text"] {
+  height: 46px;
+}
+
+body.mypage-item-form .field select {
+  height: 50px;
+}
+
+body.mypage-item-form .field textarea {
+  height: 92px;
+  padding: 10px 14px;
+  resize: vertical;
+}
+
+body.mypage-item-form .row {
+  display: flex;
+  gap: 20px;
+}
+
+body.mypage-item-form .row .field {
+  flex: 1;
+  margin-bottom: 26px;
+}
+
+body.mypage-item-form .price-wrap {
+  position: relative;
+}
+
+body.mypage-item-form .price-wrap span {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+}
+
+body.mypage-item-form .price-wrap input {
+  padding-left: 26px !important;
+}
+
+body.mypage-item-form .row .field input[type="number"] {
+  height: 44px;
+}
+
+body.mypage-item-form .actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+body.mypage-item-form .submit-btn {
+  background-color: #70b2ff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 8px 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+body.mypage-item-form .submit-btn:hover {
+  background-color: #559ce6;
+}
+
+body.mypage-item-form .cancel-btn {
+  background-color: #c7c9c3;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+body.mypage-item-form .cancel-btn:hover {
+  background-color: #adafa9;
+}
+
+body.mypage-item-form .error-text {
+  color: #b91c1c;
+  font-size: 13px;
+  margin-top: 4px;
+  display: none;
+}
+
+body.mypage-item-form .field.has-error input,
+body.mypage-item-form .field.has-error select,
+body.mypage-item-form .field.has-error textarea {
+  border-color: #b91c1c;
+}
+
+body.page-admin {
+  background-color: #96c0ff;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  padding: 20px 30px 60px;
+}
+
+body.page-admin .topbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+body.page-admin .logout-btn {
+  background-color: #f27171;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 5px 20px;
+  font-size: 15px;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body.page-admin .logout-btn:hover {
+  background-color: #e05a5a;
+}
+
+body.page-admin h1.page-title {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+body.page-admin .stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  flex-wrap: wrap;
+}
+
+body.page-admin .stat-card {
+  flex: 1;
+  min-width: 260px;
+}
+
+body.page-admin .stat-card h2 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+body.page-admin .stat-card h2 .icon {
+  margin-left: 6px;
+}
+
+body.page-admin .stat-value {
+  background-color: #78a3e4;
+  border: 1px solid #000;
+  border-radius: 3px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+body.page-admin .search-wrap {
+  max-width: 428px;
+  margin: 0 auto 30px;
+}
+
+body.page-admin .search-wrap label {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+body.page-admin .search-input-box {
+  position: relative;
+}
+
+body.page-admin .search-input-box input {
+  width: 100%;
+  height: 28px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: #fff;
+  padding: 0 36px 0 14px;
+  font-size: 15px;
+  outline: none;
+}
+
+body.page-admin .search-input-box .search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  pointer-events: none;
+}
+
+body.page-admin .role-filter-wrap {
+  max-width: 200px;
+  margin: 0 auto 30px;
+}
+
+body.page-admin .role-filter-wrap label {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+body.page-admin .role-filter-wrap select {
+  width: 100%;
+  height: 32px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: #fff;
+  padding: 0 10px;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+body.page-admin .action-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+body.page-admin .view-items-link {
+  color: #2563eb;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+body.page-admin .view-items-link:hover {
+  text-decoration: underline;
+}
+
+body.page-admin .user-list-card {
+  background-color: rgba(241, 241, 226, 0.8);
+  border: 1px solid #000;
+  max-width: 642px;
+  margin: 0 auto;
+  padding: 20px 0 20px;
+}
+
+body.page-admin .user-list-card h2 {
+  text-align: center;
+  color: #f27171;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+body.page-admin table.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 0 10px;
+}
+
+body.page-admin table.user-table th,
+body.page-admin table.user-table td {
+  padding: 6px 10px;
+  font-size: 15px;
+  text-align: left;
+  border-left: 1px solid #000;
+}
+
+body.page-admin table.user-table th:first-child,
+body.page-admin table.user-table td:first-child {
+  border-left: none;
+  text-align: center;
+  width: 60px;
+}
+
+body.page-admin table.user-table th {
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+}
+
+body.page-admin table.user-table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+body.page-admin table.user-table td.role,
+body.page-admin table.user-table th.role-col {
+  text-align: center;
+}
+
+body.page-admin table.user-table td.items-col,
+body.page-admin table.user-table th.items-col {
+  text-align: center;
+}
+
+body.page-admin table.user-table td.action-col {
+  text-align: center;
+}
+
+body.page-admin .delete-link {
+  color: #f81f1f;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+body.page-admin .delete-link:hover {
+  text-decoration: underline;
+}
+
+body.page-admin .no-results {
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
+  display: none;
+}
+
+body.page-admin-items {
+  background-color: #96c0ff;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  padding: 20px 40px 60px;
+}
+
+body.page-admin-items .topbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+body.page-admin-items .topbar a {
+  background-color: #f27171;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 5px 20px;
+  font-size: 15px;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body.page-admin-items .topbar a:hover {
+  background-color: #e05a5a;
+}
+
+body.page-admin-items .page-title {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+body.page-admin-items .subtitle {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+body.page-admin-items .item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+body.page-admin-items .item-card {
+  background: #fff;
+  border: 1px solid #000;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+body.page-admin-items .item-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  overflow-wrap: anywhere;
+}
+
+body.page-admin-items .item-card p {
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+body.page-admin-items .empty-state {
+  text-align: center;
+  font-size: 21px;
+  margin: 60px 0;
+  display: none;
+}
