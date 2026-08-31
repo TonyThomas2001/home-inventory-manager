@@ -67,7 +67,6 @@ const deleteUser = async (req, res) => {
   }
 };
 
-s;
 const getUserItems = async (req, res) => {
   try {
     const user = await User.findById(req.params.id).select("-password");
