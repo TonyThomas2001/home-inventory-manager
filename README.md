@@ -1,10 +1,10 @@
---Home Inventory Manager
+## --Home Inventory Manager
 
 An app used for tracking household inventory items. It has register page, log in page, add/edit/delete items functionalities,
 and an admin page for admins to manage users. It is Built with an Express and MongoDB for backend and a plain
 HTML, CSS amd JavaScript frontend.
 
---Project Structure
+## --Project Structure
 
 home-inventory-manager/
 ├── backend/ Express + Mongoose + JWT API
@@ -27,7 +27,7 @@ home-inventory-manager/
 ├── package.json Root convenience scripts
 └── .gitignore
 
---Setup
+## --Setup
 
 Backend
 
@@ -37,10 +37,18 @@ npm run dev
 
 Runs on `http://localhost:5001`.
 
+Live application: http://3.27.207.184:3000/login.html
+
 Frontend
 Open register.html or login.html in a browser.
 
-Flow
+## Flow
 
 Register → Login → My Inventory → Add Item / Edit Item,
 Admin Dashboard for accounts with role: 'Admin'.
+
+## Limitations
+
+The frontend is implemented using plain HTML, CSS and JavaScript rather than a frontend framework.
+The application is currently intended for local development and testing.
+The frontend needs to be opened through the provided HTML pages while the backend server is running.
